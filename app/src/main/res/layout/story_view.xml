@@ -1,0 +1,125 @@
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/storyImageIV"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ropo"
+                android:layout_height="wrap_content"
+                android:gravity="top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blog_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImageIV"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_account_circle_white_24dp" />
+
+                <TextView
+                    android:id="@+id/usernameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTV"
+                    android:maxWidth="160dp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Henry"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/commentButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/usernameTV"
+                    android:layout_toRightOf="@+id/usernameTV"
+                    android:contentDescription="@string/place_holder"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/commentCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/usernameTV"
+                    android:layout_toRightOf="@+id/usernameTV"
+                    android:text="21"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/likeButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/commentCountTV"
+                    android:contentDescription="@string/place_holder"
+                    android:src="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/likeCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/likeButton"
+                    android:text="43"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/shareButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/userImageIV"
+                    android:src="@drawable/share2"
+                    android:layout_marginTop="16dp" />
+                <Button
+                    android:id="@+id/followButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/userImageIV"
+                    android:background="@drawable/follow"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/white"
+                    android:text="Follow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>

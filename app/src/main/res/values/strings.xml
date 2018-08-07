@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Mandir</string>
+    <string name="likes">" Likes"</string>
+    <string name="some_error_occurred">Some error occurred</string>
+    <string name="start">start</string>
+    <string name="completed">completed</string>
+    <string name="pause">pause</string>
+    <string name="cancel">cancel</string>
+    <string name="resume">resume</string>
+    <string name="restart">restart</string>
+    <string name="place_holder">Place holder</string>
+    <string name="blog_title">My Mandir CardView</string>
+    <string name="blog_content">We will go into Mandir tutorial later</string>
+    <string name="read_more">Read more</string>
+</resources>
